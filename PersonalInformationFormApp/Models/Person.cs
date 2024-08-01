@@ -17,6 +17,7 @@ namespace PersonalInformationFormApp.Models
         public bool IsCurrentlyWorking { get; set; }
         public string CompanyName { get; set; }
         public string Description { get; set; }
+        [Required]
         public bool IsAcknowledged { get; set; }
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
